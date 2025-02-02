@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="login-form">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+        
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        
+            <label class="show-password-label">
+                <input type="checkbox" id="show-password" onclick="showPassword()"> Show Password
+            </label>
+            
+            <button type="submit">Login</button>
+           <!-- <a href="/google_login">
+                <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png" alt="Google Logo" style="width: 40px; height: 40px; color:Black;"/>
+            </a>
+        -->
+            <button type="button" onclick="location.href='/register'">Registration</button>
+        </form>   
+        
+        <!-- Popup Modal -->
+        <div id="error-popup" class="popup" style="display: none;">
+            <div class="popup-content">
+                <span class="close-popup" onclick="closePopup()">&times;</span>
+                <h2>Error</h2>
+                <p id="error-message">Enter valid login details.</p>
+            </div>
+        </div>
+
+        <script>
+            function showPassword() {
+                const passwordField = document.getElementById('password');
+                passwordField.type = passwordField.type === 'password' ? 'text' : 'password';
+            }
+
+            function showErrorPopup(message) {
+                const popup = document.getElementById('error-popup');
+                const messageElement = document.getElementById('error-message');
+                messageElement.textContent = message; // Set custom error message
+                popup.style.display = 'flex'; // Show the popup
+            }
+            
+            function closePopup() {
+                const popup = document.getElementById('error-popup');
+                popup.style.display = 'none'; // Hide the popup
+            }
+
+            // Handle form submission with AJAX
+            document.getElementById('login-form').addEventListener('submit', async function (e) {
+                e.preventDefault(); // Prevent the default form submission
+
+                const email = document.getElementById('email').value;
+                const password = document.getElementById('password').value;
+
+                // Send a POST request to the login endpoint
+                const response = await fetch('/login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded'
+                    },
+                    body: new URLSearchParams({ email: email, password: password })
+                });
+
+                if (response.ok) {
+                    const data = await response.json();
+                    if (data.success) {
+                        window.location.href = data.message; // Redirect to the dashboard URL
+                    } else {
+                        showErrorPopup(data.message); // Show the error popup with the message
+                    }
+                } else {
+                    const errorData = await response.json();
+                    showErrorPopup(errorData.message);
+                }
+                
+            });
+        </script>
+        
+    </div>
+</body>
+</html>
