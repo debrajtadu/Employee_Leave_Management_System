@@ -1,0 +1,51 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2024 22:27:03] "[31m[1mGET /google_authorized?state=eUsioT2BIDXnPs41Yz5nBAbnpD7KQp&code=4/0AVG7fiSEjHsDsvqQ_SRxa7fhXFibfaPl1XWheIv9pl8zBwVpbaJwM7y4-yt4AU4SIm3Hfg&scope=email+profile+openid+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email&authuser=0&prompt=consent HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2024 22:27:08] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2024 22:27:08] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+DEBUG:requests_oauthlib.oauth2_session:Generated new state s3E5AZDk3HEMEgjjFxAsArZUG1ULxs.
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2024 22:27:11] "[32mGET /google_login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2024 22:27:20] "[31m[1mGET /google_authorized?state=s3E5AZDk3HEMEgjjFxAsArZUG1ULxs&code=4/0AVG7fiSjyGjSBZUW3F2yvXaaNtXq0e_GMiffb2fASa_83sPzZuHJRUTuPr_l7NWvd7CjJA&scope=email+profile+openid+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email&authuser=0&prompt=consent HTTP/1.1[0m" 400 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 137-660-734
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2024 22:27:47] "[31m[1mGET /google_authorized?state=s3E5AZDk3HEMEgjjFxAsArZUG1ULxs&code=4/0AVG7fiSjyGjSBZUW3F2yvXaaNtXq0e_GMiffb2fASa_83sPzZuHJRUTuPr_l7NWvd7CjJA&scope=email+profile+openid+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email&authuser=0&prompt=consent HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2024 22:27:53] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2024 22:27:53] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+DEBUG:requests_oauthlib.oauth2_session:Generated new state 8dILOYUgOkKG5Yn7M9BKn0t1WKDGy8.
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2024 22:27:55] "[32mGET /google_login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2024 22:28:01] "[31m[1mGET /google_authorized?state=8dILOYUgOkKG5Yn7M9BKn0t1WKDGy8&code=4/0AVG7fiTEC2C1k-iKWf0nBBoaFQIpwv1GrXm5i6zFt2jDu4CDeGEp9uzYoIIU4ZOXg7vThA&scope=email+profile+openid+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email&authuser=0&prompt=consent HTTP/1.1[0m" 400 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 137-660-734
+INFO:werkzeug:127.0.0.1 - - [08/Nov/2024 08:36:11] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Nov/2024 08:36:11] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Nov/2024 08:36:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+DEBUG:requests_oauthlib.oauth2_session:Generated new state UCc9pTV3pMGXgherj0Q2ft3EjWtq6G.
+INFO:werkzeug:127.0.0.1 - - [08/Nov/2024 08:36:14] "[32mGET /google_login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [08/Nov/2024 08:36:20] "[31m[1mGET /google_authorized?state=UCc9pTV3pMGXgherj0Q2ft3EjWtq6G&code=4/0AVG7fiSQrUdbMXswh_tWelHFvqzW8fD8qS-QQVtqp9XNF5imm8pVgQ2TZhlkfTE4xJmS5g&scope=email+profile+openid+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email&authuser=0&prompt=consent HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [08/Nov/2024 08:36:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/Nov/2024 08:37:30] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/Nov/2024 08:41:53] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Nov/2024 08:41:56] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Nov/2024 08:41:56] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Nov/2024 08:42:47] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [08/Nov/2024 08:42:55] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [08/Nov/2024 08:43:10] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\swora\\Desktop\\Employee_Leave_Management_System\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 137-660-734
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 137-660-734
